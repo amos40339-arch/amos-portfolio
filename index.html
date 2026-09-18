@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AE Intelligence — Amos Emmanuel</title>
-<meta name="description" content="AE Intelligence — Nigerian software studio building production payment infrastructure, VTU platforms, WhatsApp automation and premium web builds.">
+<meta name="description" content="AE Intelligence — software studio building production payment infrastructure, VTU platforms, WhatsApp automation and premium web builds for clients worldwide.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -460,6 +460,46 @@
     .work-grid{grid-template-columns:1fr;}
   }
 
+  /* ---------- TESTIMONIALS ---------- */
+  .testimonial-card{
+    border:1px solid var(--line-strong);
+    background:linear-gradient(165deg, #0F0F0F 0%, #050505 60%, #000000 100%);
+    padding:52px 48px;
+    position:relative;
+    box-shadow:0 0 60px rgba(255,255,255,0.05), 0 0 1px rgba(255,255,255,0.3);
+  }
+  .testimonial-quote{
+    font-family:'Fraunces', serif;
+    font-weight:500;
+    font-style:italic;
+    font-size:clamp(20px, 2.6vw, 28px);
+    line-height:1.45;
+    max-width:34ch;
+    margin:0;
+    color:var(--ink);
+  }
+  .testimonial-attr{
+    margin-top:28px;
+    display:flex;
+    align-items:baseline;
+    gap:10px;
+    flex-wrap:wrap;
+  }
+  .testimonial-name{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:13px;
+    font-weight:600;
+    color:var(--ink);
+  }
+  .testimonial-role{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    color:var(--ink-faint);
+  }
+  @media (max-width:600px){
+    .testimonial-card{padding:36px 28px;}
+  }
+
   /* ---------- PROCESS ---------- */
   .process-list{
     display:grid;
@@ -586,6 +626,7 @@
     <nav class="primary-nav">
       <a href="#systems">Systems</a>
       <a href="#work">Client Work</a>
+      <a href="#testimonials">Testimonials</a>
       <a href="#process">Process</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -602,7 +643,7 @@
       <div>
         <div class="eyebrow hero-anim"><span class="dot-live"></span>OPERATING FIVE PRODUCTION SYSTEMS</div>
         <h1 class="hero-anim">Software that moves money, not just <em>looks good.</em></h1>
-        <p class="hero-sub hero-anim">I'm Amos Emmanuel, founder of AE Intelligence. I build and operate payment infrastructure, VTU platforms and automation systems for the Nigerian market — and I design premium web builds for brands that need to look as sharp as they operate.</p>
+        <p class="hero-sub hero-anim">I'm Amos Emmanuel, founder of AE Intelligence. I build and operate payment infrastructure, VTU platforms and automation systems for clients around the world — and I design premium web builds for brands that need to look as sharp as they operate.</p>
         <div class="hero-actions hero-anim">
           <a class="btn btn-primary" href="#systems">See the systems →</a>
           <a class="btn btn-ghost" href="https://wa.me/2349034161187" target="_blank" rel="noopener">Talk to me on WhatsApp</a>
@@ -655,7 +696,7 @@
           <div class="system-name">Pgiftcards.com</div>
           <div class="system-url">pgiftcards.com</div>
         </div>
-        <p class="system-desc">A Nigerian gift card trading platform with separate dashboards for customers, resale partners and platform admins, a Telegram mini app, and a WhatsApp bot handling card submissions and rate lookups directly in chat. Built on a live rate engine with real-time payout calculation and multi-gateway disbursement.</p>
+        <p class="system-desc">A gift card trading platform with separate dashboards for customers, resale partners and platform admins, a Telegram mini app, and a WhatsApp bot handling card submissions and rate lookups directly in chat. Built on a live rate engine with real-time payout calculation and multi-gateway disbursement.</p>
         <div class="system-meta">
           <div class="stack-chips">
             <span class="chip">Node.js</span><span class="chip">Prisma</span><span class="chip">PostgreSQL</span><span class="chip">React</span><span class="chip">Paystack</span>
@@ -772,7 +813,7 @@
           <div>
             <div class="work-tag">INTERIOR / FURNITURE</div>
             <div class="work-name">OJC Luxury Furnitures</div>
-            <p class="work-desc">A furniture brand site designed around product photography and material detail for a high-end Nigerian furnishings label.</p>
+            <p class="work-desc">A furniture brand site designed around product photography and material detail for a high-end furnishings label.</p>
           </div>
           <div class="work-cat">Client build</div>
         </div>
@@ -780,9 +821,29 @@
           <div>
             <div class="work-tag">YOUR BRAND HERE</div>
             <div class="work-name">Next build</div>
-            <p class="work-desc">If you're building something for a Nigerian luxury brand or a Web3 project and need it to actually convert, this is where it starts.</p>
+            <p class="work-desc">If you're building something for a luxury brand or a Web3 project and need it to actually convert, this is where it starts.</p>
           </div>
           <div class="work-cat"><a href="https://wa.me/2349034161187" target="_blank" rel="noopener" style="color:var(--gold-dim);">Get in touch →</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="block" id="testimonials">
+    <div class="wrap">
+      <div class="block-head reveal-up">
+        <div>
+          <div class="eyebrow">CLIENT FEEDBACK</div>
+          <h2>What it's like working with me</h2>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal-item">
+        <p class="testimonial-quote">"Amos showed real problem-solving skill getting both Pointly and Pgiftcards live and working."</p>
+        <div class="testimonial-attr">
+          <span class="testimonial-name">Chifo Reasoner</span>
+          <span class="testimonial-role">Pointly &amp; Pgiftcards</span>
         </div>
       </div>
     </div>
@@ -926,7 +987,7 @@
     });
 
     // ---- Staggered card reveals, grouped by parent section ----
-    ['#systems', '#work', '#process'].forEach((sectionSel)=>{
+    ['#systems', '#work', '#testimonials', '#process'].forEach((sectionSel)=>{
       const section = document.querySelector(sectionSel);
       if(!section) return;
       const items = section.querySelectorAll('.reveal-item');
